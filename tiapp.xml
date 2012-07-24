@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">RpbylxApf63vSg8zgrI1vVlBy4vOTGh7</property>
+    <property name="acs-oauth-key-production" type="string">s9frcW6hH9D9kCEbuP76hRU7xUHLXfr0</property>
+    <property name="acs-api-key-production" type="string">kmxini4P2hAwhPoat1iD3ucnPKho09gy</property>
+    <property name="acs-oauth-secret-development" type="string">et9QymwOEasVxdo1JTv5XGMagqq8Yios</property>
+    <property name="acs-oauth-key-development" type="string">yztpzVU2ileFvfcJb20fauORxDXyxfVF</property>
+    <property name="acs-api-key-development" type="string">GavvPR5fi40ulbey5Y9C9Wtd6eIcCz8C</property>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">false</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.1.0.GA</sdk-version>
+    <id>com.qnyp.titaniumbootstrap</id>
+    <name>titanium-bootstrap</name>
+    <version>1.0</version>
+    <publisher>juno</publisher>
+    <url>http://</url>
+    <description>WebView with Twitter Bootstrap example.</description>
+    <copyright>© 2012 QNYP, LLC.</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>f510396c-8a07-4c81-9f37-aa4bcafcbd4d</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules/>
+</ti:app>
