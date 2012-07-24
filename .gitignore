@@ -2,6 +2,7 @@
 .project
 .settings
 .fastdev.lock
+alloy.json
 build
 build.log
 config.rb
