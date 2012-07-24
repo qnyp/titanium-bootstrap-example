@@ -22,5 +22,18 @@ if (Ti.version < 1.8) {
   window.containingTab = tab;
   tabGroup = Ti.UI.createTabGroup();
   tabGroup.addTab(tab);
+  Ti.App.addEventListener('onLinkTap', function(params) {
+    var filename, newWindow;
+    filename = params.filename;
+    newWindow = Ti.UI.createWindow({
+      title: filename,
+      backgroundColor: 'white'
+    });
+    webView = Ti.UI.createWebView({
+      url: filename
+    });
+    newWindow.add(webView);
+    return window.containingTab.open(newWindow);
+  });
   return tabGroup.open();
 })();

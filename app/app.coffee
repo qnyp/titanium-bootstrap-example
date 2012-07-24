@@ -17,7 +17,20 @@ do ->
     window: window
   window.containingTab = tab
 
-  # create and setup a tab group
+  # create a tab group
   tabGroup = Ti.UI.createTabGroup()
   tabGroup.addTab(tab)
+
+  # set event listener
+  Ti.App.addEventListener 'onLinkTap', (params) ->
+    filename = params.filename;
+    newWindow = Ti.UI.createWindow
+      title: filename
+      backgroundColor:'white'
+    webView = Ti.UI.createWebView
+      url: filename
+    newWindow.add(webView)
+    window.containingTab.open(newWindow)
+
+  # open a tab group
   tabGroup.open()

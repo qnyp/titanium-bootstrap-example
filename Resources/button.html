@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Twitter Bootstrap</title>
+    <title>Button</title>
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
@@ -13,31 +13,23 @@
   <body>
     <div class="row">
       <div class="span12">
-        <h1>Twitter Bootstrap</h1>
+        <h1>Button</h1>
       </div>
     </div>
 
     <div class="row">
       <div class="span12">
-        <ul>
-          <li><a data-filename="button.html" href="#">Button</li>
-          <li><a data-filename="table.html" href="#">Table</li>
-          <li><a data-filename="form.html" href="#">Form</li>
-        </ul>
+        <p><a class="btn" href="#">Default</a></p>
+        <p><a class="btn btn-primary" href="#">Primary</a></p>
+        <p><a class="btn btn-info" href="#">Info</a></p>
+        <p><a class="btn btn-success" href="#">Success</a></p>
+        <p><a class="btn btn-warning" href="#">Warning</a></p>
+        <p><a class="btn btn-danger" href="#">Danger</a></p>
+        <p><a class="btn btn-inverse" href="#">Inverse</a></p>
       </div>
     </div>
 
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-
-    <script>
-      $(document).ready(function() {
-        return $('a').click(function(e) {
-          return Ti.App.fireEvent('onLinkTap', {
-            filename: $(this).data('filename')
-          });
-        });
-      });
-    </script>
   </body>
 </html>
